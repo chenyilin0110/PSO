@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <math.h>
+#include <cmath>
 #define run 30 
 #define maxIteration 400 
 #define particle 50 
@@ -11,7 +11,7 @@
 #define b 0.2
 #define wStart 0.9
 #define wEnd 0.4
- 
+
 void countF(double array[],int c,int iteration);
 
 int main()
@@ -137,7 +137,7 @@ int main()
 	}
 	for(i=0;i<maxIteration;i++)
 		printf("%d %.16f\n",i + 1,runData[run][i]);
-	
+	return 0;
 }
 
 void countF(double particleData[],int c,int iteration)
